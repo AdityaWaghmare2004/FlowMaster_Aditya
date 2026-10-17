@@ -1,0 +1,10 @@
+name: KYC_Pipeline
+steps:
+  - id: step_1
+    action: start_verification
+    result_topic: verification_result
+    compensation: compensate_verification
+  - id: step_2
+    action: start_credit_check
+    result_topic: credit_result
+    compensation: compensate_credit
